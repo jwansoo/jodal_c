@@ -1,9 +1,11 @@
 <template>
-  <div>
-    <h1>welcome to wansoo</h1>
-  </div>
+  <main>
+    <RouterView />
+  </main>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { supabase } from '@/lib/supabaseClient'
 
-<style scoped></style>
+console.log('Supabase client initialized:', supabase)
+</script>
